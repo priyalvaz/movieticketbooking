@@ -1,0 +1,604 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movies</title>
+<link rel="stylesheet" href="css/style_movie.css"/>
+<link rel="stylesheet" href="css/lightslider.css">
+<!--js-link------->
+<script src="js/JQuery3.3.1.js"></script>
+<script src="js/lightslider.js"></script>
+<!--fav-icon------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link ref="shortcut icon" href="images/logo.png"/>
+<!--using FontAwesome------->
+<script src="https:kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+<style>
+  
+</style>
+</head>
+<body >
+    <form>
+    <!--navigation----->
+
+
+
+    <nav>
+        <div class="logo">FilmFlix</div>
+        <ul>
+            <div class="example" style="margin:auto;max-width:300px; margin-right: 30px;">
+                <div class="search example">
+                    <select id="select-city" placeholder="Pick your city..." style="padding: 12px 20px;">
+                        <option value="">Select a city...</option>
+                        <option value="AG">Agra</option>
+                        <option value="AH">Ahmedabad</option>
+                        <option value="BA">Bangalore</option>
+                        <option value="CH">Chennai</option>
+                        <option value="DE">Delhi</option>
+                        <option value="HY">Hyderabad</option>
+                        <option value="IN">Indore</option>
+                        <option value="JA">Jaipur</option>
+                        <option value="KO">Kolkata</option>
+                        <option value="LU">Lucknow</option>
+                        <option value="MU">Mumbai</option>
+                        <option value="NA">Nashik</option>
+                        <option value="PU">Pune</option>
+                        <option value="SU">Surat</option>
+                        <option value="UD">Udaipur</option>
+                      </select>
+                      <!--search-icon-->
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                  </div>
+                
+            </div>
+            <li><a class="" href="../home.html">Home</a></li>
+            <li><a class="active" href="..\movies\movie.html">Movies</a></li>
+            <li><a class="" href="..\news\news.html">News</a></li>
+            <li><a class="" href="..\contact.php">Contact Us</a></li>
+            <li><a class="" href="../index.php">Sign-Out</a></li>
+            
+           
+        </ul>
+    </nav>
+    <section id="main">
+        <!--trending----------------------------------------------------------------------------->
+        <!--heading---->
+        <h1 class="trending-heading"><b>trending movies..</b>.</h1>
+
+        <ul id="autoWidth" class="cs-hidden">
+           <!--box-1-------->
+            <li class="item-a">
+      <!--trending-box----->
+        <div class="trending-box">
+            <img src="images/it2017.jpg" style="width:100%; height: 250px;">
+        </div>
+        <div class="text">
+            It 2017<br>
+            <font color="#868484">2017,USA,Horror/Thriller/Adventure/Drama
+                <br>Language - English
+            </font><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p style="text-align: left;">
+        <button class="button" formaction="..\trailer\it.html">View Trailer &nbsp;<i class="fa fa-play-circle "></i>
+        <button class="button" formaction="..\book\it.php">Book Tickets</button></p>
+      </div>
+            </li>
+           <!--box-2-------->
+           <li class="item-b">
+            <!--trending-box----->
+              <div class="trending-box">
+                  <img src="images/bahubali-2.jpg" style="width:100%; height: 250px;"/>
+              </div>
+              <div class="text">
+                Bahubali-2<br>
+                <font color="#868484">2017,India,Hindi,Action/Drama/fantasy
+                    <br>Language - Hindi
+                </font><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p style="text-align: left;">
+        <button class="button" formaction="..\trailer\bahubali-2.html">View Trailer &nbsp;<i class="fa fa-play-circle "></i>
+        <button class="button" formaction="..\book\Bahubali-2.php">Book Tickets</button></p>
+          </div>
+                  </li>
+          <!--box-3-------->
+          <li class="item-c">
+            <!--trending-box----->
+              <div class="trending-box">
+                  <img src="images/dil_bechara.jpg" style="width:100%; height: 250px;"/>
+              </div>
+              <div class="text">
+                Dil Bechara<br>
+                <font color="#868484">2020,India,Romance/Comedy/Drama
+                    <br>Language - Hindi
+                </font><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p style="text-align: left;">
+        <button class="button" formaction="..\trailer\dil_bechara.html">View Trailer &nbsp;<i class="fa fa-play-circle "></i>
+        <button class="button" formaction="..\book\dil_bechara.php">Book Tickets</button></p>
+            </div>
+                  </li>
+          <!--box-4-------->
+          <li class="item-d">
+            <!--trending-box----->
+              <div class="trending-box">
+                  <img src="images/pokemon.jpeg" style="width:100%; height: 250px;"/>
+              </div>
+              <div class="text">
+                Pokemon Detective Pikachu<br>
+                <font color="#868484">2020,English,Adventure/Comedy/Fantasy
+                    <br>Language - English
+                </font><br>
+
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p style="text-align: left;">
+                <button class="button" formaction="..\trailer\pokemon.html">View Trailer &nbsp;<i class="fa fa-play-circle "></i>
+                <button class="button" formaction="..\book\pokemon.php">Book Tickets</button></p>
+            </div>
+                  </li>
+                  <!--box-5-------->
+            <li class="item-e">
+                <!--trending-box----->
+                  <div class="trending-box">
+                      <img src="images/lootcase.jpg" style="width:100%; height: 250px;"/>
+                  </div>
+                  <div class="text">
+                    Lootcase<br>
+                    <font color="#868484">2020,India,Hindi/Comedy/Drama
+                        <br>Language - Hindi
+                    </font><br>
+
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p style="text-align: left;">
+            <button class="button" formaction="..\trailer\lootcase.html">View Trailer &nbsp;<i class="fa fa-play-circle "></i>
+            <button class="button" formaction="..\book\lootcase.php">Book Tickets</button></p>
+                </div>
+                      </li>
+                      <!--box-6-------->
+            <li class="item-f">
+                <!--trending-box----->
+                  <div class="trending-box">
+                      <img src="images/godzilla.jpg" style="width:100%; height: 250px;"/>
+                  </div>
+                  <div class="text">
+                    Godzilla<br>
+                    <font color="#868484">2020,Action/Adventure/Sci-Fi
+                        <br>Language - English
+                    </font><br>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                    <p style="text-align: left;">
+            <button class="button" formaction="..\trailer\godzilla.html">View Trailer &nbsp;<i class="fa fa-play-circle "></i><br>
+            <button class="button" formaction="..\book\godzilla.php">Book Tickets</button>
+                </div>
+                      </li>
+        </ul>
+        
+    </section>
+    <!--latest-movies----------------------------------------------------------------------->
+    <section id="latest">
+        <h2 class="latest-heading"><b>Latest Movies...</b></h2>
+        <!--slider---->
+        <ul id="autoWidth2" class="cs-hidden">
+            <!--slide-box-1------>
+            <li class="item-a">
+                <div class="latest-box">
+                    <!--img----->
+                    <div class="latest-b-img">
+                        <img src="images/gunjan-saxena.jpg" style="width:100%; height: 250px;"/>
+                    </div>
+                    <!--text---->
+                        <div class="latest-b-text">
+                            <strong>Gunjan Saxena</strong>
+                            <p>2020,Drama
+                                <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                        <button class="button2" formaction="../book.php">Book Tickets</button>                
+            </div>
+            </li>
+            <!--slide-box-2------>
+            <li class="item-b">
+                <div class="latest-box">
+                    <!--img----->
+                    <div class="latest-b-img">
+                        <img src="images/Panga.jpg">
+                    </div>
+                    <!--text---->
+                        <div class="latest-b-text">
+                            <strong>Panga</strong>
+                            <p>2020,Sport/Drama
+                                <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                        <button class="button2" formaction="../book.php">Book Tickets</button> </p>                </div>
+            </li>
+            <!--slide-box-3------>
+            <li class="item-c">
+                <div class="latest-box">
+                    <!--img----->
+                    <div class="latest-b-img">
+                        <img src="images/all-the-bright-places.jpg">
+                    </div>
+                    <!--text---->
+                        <div class="latest-b-text">
+                            <strong>All the bright places</strong>
+                            <p>2020,Romance/Drama
+                                <br>Language - English
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                        <button class="button2" formaction="..\book\bright.php">Book Tickets</button> </p>
+                                        </div>
+            </li>
+            <!--slide-box-4------>
+            <li class="item-d">
+                <div class="latest-box">
+                    <!--img----->
+                    <div class="latest-b-img">
+                        <img src="images/kin.jpg">
+                    </div>
+                    <!--text---->
+                        <div class="latest-b-text">
+                            <strong>KIN</strong>
+                            <p>2020,Sci-fi/Action
+                                <br>Language - Engish
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                        <button class="button2" formaction="..\book\kin.php">Book Tickets</button> </p>
+                                        </div>
+            </li>
+            <!--slide-box-5------>
+            <li class="item-e">
+                <div class="latest-box">
+                    <!--img----->
+                    <div class="latest-b-img">
+                        <img src="images/harry.jpg">
+                    </div>
+                    <!--text---->
+                        <div class="latest-b-text">
+                            <strong>Harry Potter</strong>
+                            <p>2011,Fantasy/Fantasy
+                                <br>Language - English
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                        <button class="button2" formaction="../book.php">Book Tickets</button> </p>         
+                        </div>
+            </li>
+            <!--slide-box-6------>
+            <li class="item-f">
+                <div class="latest-box">
+                    <!--img----->
+                    <div class="latest-b-img">
+                        <img src="images/Shikara.jpg">
+                    </div>
+                    <!--text---->
+                        <div class="latest-b-text">
+                            <strong>Shikara</strong>
+                            <p>2020,Romance/Drama
+                                <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </p>
+                        </div>
+                        <button class="button2" formaction="..\book\Shikara.php">Book Tickets</button> </p>         
+                        </div>
+                                        
+            </li>
+        </ul>   
+        </section>
+        <!--evergreen-movies------------------------------------------------------------------------------------>
+        <div class="movies-heading">
+            <h2><b>Evergreen Movies...</b></h2>
+        </div>  
+        <section id="movies-list">
+            <!--box-1------>
+            <div class="movies-box">
+            <!--img------->
+            <div class="movies-img">
+                <img src="images/ddlj.jpg">
+            </div>
+          <!--text------>
+          <a href="#">
+            Dilwale Dulhania Le Jayenge
+            <br> <font size="1rem" color="#868484">1995 ‧ Romance/Musical
+                <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+            </font>
+            <br><br>
+            <button class="buttons" formaction="../book.php">Book Tickets</button></p> 
+         </a>
+        </div>
+         <!--box-2------>
+         <div class="movies-box">
+         <!--img------->
+         <div class="movies-img">
+             <img src="images/mother-india.jpg">
+         </div>
+       <!--text------>
+       <a href="#">
+           Mother India
+        <br> <font size="1rem" color="#868484">1957 ‧ Musical/Drama
+            <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+        </font>
+        <br><br>
+        <button class="buttons" formaction="../book.php">Book Tickets</button></p> 
+     </a>
+     </div>
+      <!--box-3------>
+      <div class="movies-box">
+      <!--img------->
+      <div class="movies-img">
+          <img src="images/hahk.jpg">
+      </div>
+    <!--text------>
+    <a href="#">
+        Hum Aapke Hain Koun..!
+        <br> <font size="1rem" color="#868484">1994 ‧ Romance/Musical
+            <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+        </font>
+        <br><br>
+        <button class="buttons" formaction="../book.php">Book Tickets</button></p> 
+     </a>
+  </div>
+   <!--box-4------>
+   <div class="movies-box">
+   <!--img------->
+   <div class="movies-img">
+       <img src="images/3idiots.jpg">
+   </div>
+ <!--text------>
+ <a href="#">
+     3-Idiots
+    <br> <font size="1rem" color="#868484">2009 ‧ Comedy/Drama
+        <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+    </font>
+    <br><br>
+       <button class="buttons" formaction="../book.php">Book Tickets</button></p> 
+    </a>
+</div>
+ <!--box-5------>
+ <div class="movies-box">
+ <!--img------->
+ <div class="movies-img">
+     <img src="images/sholay.jpg">
+ </div>
+<!--text------>
+<a href="#">
+    Sholay
+    <br> <font size="1rem" color="#868484">1975 ‧ Musical/Adventure
+        <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+    </font>
+    <br><br>
+    <button class="buttons" formaction="../book.php">Book Tickets</button></p> 
+ </a>
+</div>
+ <!--box-6------>
+ <div class="movies-box">
+ <!--img------->
+ <div class="movies-img">
+     <img src="images/yjhd.jpg">
+ </div>
+<!--text------>
+<a href="#">
+    Yeh Jawaani Hai Deewani
+    <br> <font size="1rem" color="#868484">2013 ‧ Romance/Drama
+        <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+    </font>
+    <br><br>
+       <button class="buttons" formaction="../book.php">Book Tickets</button></p> 
+    </a>
+</div>
+ <!--box-7------>
+ <div class="movies-box">
+ <!--img------->
+ <div class="movies-img">
+     <img src="images/lagaan.jpg">
+ </div>
+<!--text------>
+<a href="#">
+    Lagaan
+    <br> <font size="1rem" color="#868484">2001 ‧ Musical/Sport
+        <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+    </font>
+    <br><br>
+       <button class="buttons" formaction="../book.php">Book Tickets</button></p> 
+    </a>
+</div>
+ <!--box-8------>
+ <div class="movies-box">
+ <!--img------->
+ <div class="movies-img">
+     <img src="images/amar-akbar-anthony.jpg">
+ </div>
+<!--text------>
+<a href="#">
+    Amar AKbar Anthony
+    <br> <font size="1rem" color="#868484">1977 ‧ Musical/Drama
+        <br>Language - Hindi
+                                <br>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+    </font>
+    <br><br>
+    
+        <button class="buttons" formaction="../book.php">Book Tickets</button></p> 
+    </a>
+</div>
+<!--box-9------>
+<div class="movies-box">
+    <!--img------->
+    <div class="movies-img">
+        <img src="images/jodha-akbar.jpg">
+    </div>
+   <!--text------>
+   <a href="#">
+       Jodha Akbar
+       <br> <font size="1rem" color="#868484">2008 ‧ Romance/Musical
+           <br>Language - Hindi
+                                   <br>
+                                   <span class="fa fa-star checked"></span>
+                                   <span class="fa fa-star checked"></span>
+                                   <span class="fa fa-star checked"></span>
+                                   <span class="fa fa-star checked"></span>
+                                   <span class="fa fa-star"></span>
+       </font>
+       <br>
+      <br>
+           <button class="buttons" formaction="../book.php">Book Tickets</button></p> 
+       </a>
+   </div>
+   <!--box-10------>
+ <div class="movies-box">
+    <!--img------->
+    <div class="movies-img">
+        <img src="images/don.jpg">
+    </div>
+   <!--text------>
+   <a href="#">
+       DON
+       <br> <font size="1rem" color="#868484">2006 ‧ Action/Crime
+           <br>Language - Hindi
+                                   <br>
+                                   <span class="fa fa-star checked"></span>
+                                   <span class="fa fa-star checked"></span>
+                                   <span class="fa fa-star checked"></span>
+                                   <span class="fa fa-star"></span>
+                                   <span class="fa fa-star"></span>
+       </font>
+       <br><br>
+       
+           <button class="buttons" formaction="../book.php">Book Tickets</button></p> 
+       </a>
+   </div>
+        </section>
+        <!--btns-------->
+        <div class="btns">
+            <a href="#">Previous</a>
+            <a href="#">Next</a>
+        </div>
+        <!--footer------->
+        <footer>
+            <p>FlimFlix, Ltd Consumer Website</p>
+            <p>Copyright 2020 - FlimFlix</p>
+        </footer>
+    <!--slider-script---------->
+</form>
+    <script>
+          $(document).ready(function() {
+    $('#autoWidth,#autoWidth2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+        } 
+    });  
+  });
+    </script>
+    
+</body>
+</html>
